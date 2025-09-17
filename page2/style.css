@@ -20,7 +20,6 @@ body {
 .button-back-section{
   position: absolute;
   padding: 30px 337px 600px 34px;
-  cursor: pointer;
 }
 
 .button-back{
@@ -30,7 +29,7 @@ body {
   padding: 12px 7px;
   border-radius: 5px;
   outline: none;
-  transition: background 0.3s;
+  cursor: pointer;
 }
 
 .button-back:hover {
@@ -223,6 +222,15 @@ margin-bottom: 23px;
    font-size: 12px;
    
 }
+
+.birth-select:invalid{
+      color: #999;
+    }
+
+.birth-select:option{
+      color: #000000;
+    }
+
 
 .form-group-list{
   margin: 0 auto;
