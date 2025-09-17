@@ -13,10 +13,11 @@ body {
   padding: 0;
 }
 
+
 .profile-card {
   background-color: white;
   border-radius: 20px;
-  padding: 20px;
+  padding: 10px 20px 10px 20px;
   position: relative;
   z-index: 1;
   min-height: 100%;
@@ -26,11 +27,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 16px;
+  padding: 0px 16px;
   background-color: white;
   position: sticky;
-  top: 0;
-  z-index: 100;
   }
 
 .time {
@@ -69,7 +68,7 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 32px 8px;
+  padding: 23px 8px;
 }
 
 .title {
@@ -78,10 +77,15 @@ body {
   margin: 0;
 }
 
+.profile-card{
+    width: 393px;
+    height: 852px;
+}
+
 .profile-section {
   display: flex;
   align-items: center;
-  padding: 20px 16px;
+  padding: 2px 16px;
   background-color: #fff;
  
 }
@@ -92,7 +96,8 @@ body {
   width: 100px;
   height: 100px;
   margin-right: 12px;
-  background-color: #fff;
+  background-color: #ffffff;
+  margin-bottom: 64px;
 }
 
 .profile-photo {
@@ -139,9 +144,6 @@ body {
   text-decoration: none;
 }
 
-.button-edit:hover {
-  background-color: #3592e7;
-}
 
 .list-container {
   background-color: #fff;
@@ -150,9 +152,10 @@ body {
 
 .list-item {
   display: flex;
-  padding: 15px;
+  padding: 12px;
   justify-content: space-between;
   background-color: #fff;
+  
   }
 
 .list-item:last-child {
@@ -170,25 +173,19 @@ body {
   font-size: 15px;
 }
 
-.divider {
-  height: 1px;
-  background-color: #000000;
-  margin: 16px 0;
-  
+hr{
+  border: none;
+  border-top: 1px solid black;
+  width: 330px;
+  margin: 0 auto;
+  padding-top: 18px;
+  margin-top: 18px;
+
 }
 
 .footer {
   text-align: center;
-  padding: 25px;
+  padding-top: 25px;
   font-size: 10px;
   color: #00000096;
-  background-color: #fff;
-}
-
-@media (max-width: 320px) {
-  .profile-section {
-    flex-direction: column;
-    text-align: center;
-  }
-  
 }

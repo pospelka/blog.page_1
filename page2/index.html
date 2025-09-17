@@ -8,11 +8,10 @@
 
 </head>
 <body>
-
   
   <div class="container">
-    
     <div class="profile-card">
+      
       <div class="status-bar">
          
          <div class="social-icons">
@@ -32,27 +31,42 @@
          </div>
        </div>
 
+       <div class="button-back-section">
+  <button class="button-back"><</button>
+      </div>
+
        <div class="card"></div>
       <div class="avatar-container">
         <img src="image/LADY.jpg" alt="Profile" class="avatar">
         <img src="image/pencil.svg" alt="Profile icon" class="profile-icon">
       </div>
 
-    
+    <div class="image-abstraction">
+      <img src="image/bg 3.svg" alt="абстракция">
+    </div>
 
       
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
+      <form action="#" method="post">
         <h1 class="title">Edit Profile</h1>
         <div class="form-group">
-          <label for="firstName">First Name</label>
+          <div class="name">
+          <label for="firstName" class="gray">First Name</label>
           <input type="text" id="firstName" name="firstName" value="Sabrina" required>
-          <label for="lastName">Last Name</label>
+          </div>
+          <div class="lastName">
+          <label for="lastName" class="gray">Last Name</label>
           <input type="text" id="lastName" name="lastName" value="Aryan" required>
-          <label for="username">Username</label>
+          </div>
+          <div class="username">
+          <label for="username" class="gray">Username</label>
           <input type="text" id="username" name="username" value="@Sabrina" required>
-          <label for="email">Email</label>
+          </div>
+          <div class="email">
+          <label for="email" class="gray">Email</label>
           <input type="email" id="email" name="email" value="@SabrinaAry208@gmailcom" required>
-          <label for="phone">Phone Number</label>
+          </div>
+          <div class="phone">
+          <label for="phone" class="gray">Phone Number</label>
           <div class="phone-input-wrapper">
             <select id="countryCode" class="country-code">
               <option>+234</option>
@@ -61,46 +75,45 @@
             </select>
             <input type="tel" id="phone" name="phone" placeholder="904 6470">
           </div>
+          </div>
         </div>
 
-        
-        <div class="form-group">
-          <label for="birth"></label>
-  
-          <select id="birth" name="birth" >
-            <option value="Birth">Birth</option>
-            <option value="January">January</option>
-            <option value="February">February</option>
-            <option value="March">March</option>
-            <option value="April">April</option>
-            <option value="May">May</option>
-            <option value="June">June</option>
-            <option value="July">July</option>
-            <option value="August">August</option>
-            <option value="September">September</option>
-            <option value="October">October</option>
-            <option value="November">November</option>
-            <option value="December">December</option>
-          </select>
-        
-        </div>
-
-        
-        <div class="form-group">
-                <label for="gender"></label>
-                <select id="gender" name="gender" required>
-                    <option value="Gender">Gender</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                </select>
+        <div class="form-group-list">
+            <div class="form-group-list-birth">
+              <label for="birth"></label>
+              <select id="birth" name="birth" >
+                <option value="#" disabled selected hidden class="birth-text">Birth</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+              </select>
+            
             </div>
-
-        
+            <div class="form-group-list-gender">
+                    <label for="gender"></label>
+                    <select id="gender" name="gender" required>
+                    <option value="#" disabled selected hidden class="gender-text">Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        
+                    </select>
+              </div>
+        </div>
+       <div class="button">
         <button type="button" class="change-password-btn">
           <span>Change Password</span>
           <img src="image/lock.svg" alt="lock">
         </button>
+        </div>
       </form>
     </div>
   </div>
